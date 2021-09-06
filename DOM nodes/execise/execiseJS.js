@@ -6,3 +6,4 @@ for(let i of list){
 
     document.body.append(p)
 }
+console.dir(document)
