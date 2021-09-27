@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="#" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,regular&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Play:700&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Iron way</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <!-- ограничевающий контейнер -->
+        <div class="header__container _container">
+          <!-- logo  -->
+          <div class="header__logo logo">
+            <img src="./img/logo/logo.svg" alt="logo" class="logo__img" />
+
+            <div class="logo_label">
+              <p class="logo__title">Название</p>
+              <p class="logo__subtitle">И какой нибудь лозунг</p>
+            </div>
+          </div>
+
+          <nav class="header__menu menu">
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Главная</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">О нас</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">География</a>
+                </li>
+                <li class="menu__item">
+                  <a href="#" class="menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header__phone phone">
+            <img src="./img/PhoneCall.png" alt="" class="phone__img" />
+            <a href="tel:+79022729314" class="phone__number">8(902)272-93-14</a>
+          </div>
+          <div class="menu__icon">
+            <span></span>
+          </div>
+        </div>
+      </header>
+      <main class="page">
+        <div class="page__main-block main-block">
+          <div class="main-block__container _container">
+            <div class="main-block__body">
+              <h1 class="main-block__title">
+                <span>Услуги по строительству</span>
+                и ремонту железнодорожных путей
+              </h1>
+              <div class="main-block__text">
+                Компания проводит строительные и ремонтные работы на территории
+                более чем 20 субъектов Российской Федерации
+              </div>
+            </div>
+          </div>
+          <div class="main-block__image _ibg" id="first-img">
+            <img src="./img/main_block/mainThemePic.jpg" alt="main picture" />
+          </div>
+          <div class="page__form__second-pic _ibg" id="second-img">
+            <img src="./img/main_block/mainThemePic960.jpg" alt="main picture" />
+          </div>
+          <div class="page__form__third-pic _ibg" id="third-img">
+            <img src="./img/main_block/mainThemePic480.jpg" alt="main picture" />
+          </div>
+        </div>
+        <section class="page__form form">
+          <div class="form__container _container">
+            <div class="form__body">
+              <div class="page__form__image _ibg">
+                <img src="./img/rails.jpg" alt="main picture" />
+              </div>
+              <form action="" class="form__content">
+                <div class="form__title">
+                  <span class="form__title_block">Оставьте заявку</span> на <span class="form__title_bold">бесплатную</span> консультацию
+                </div>
+                <div class="form__data">
+                  <div class="form__columns">
+                    <div class="form__column">
+                      <div class="form__item">
+                        <label for="name" class="form__item__label">Имя</label>
+                        <input
+                          id="name"
+                          type="text"
+                          class="form__item__input"
+                          name="name"
+                          placeholder="Михаил"
+                        />
+                      </div>
+                    </div>
+                    <div class="form__column">
+                      <div class="form__item">
+                        <label for="phone" class="form__item__label"
+                          >Телефон</label
+                        >
+                        <input
+                          id="phone"
+                          type="number"
+                          minlength="0"
+                          maxlength="12"
+                          class="form__item__input"
+                          name="phone"
+                          placeholder="8 (800) 535 35 35"
+                        />
+                      </div>
+                    </div>
+                    <div class="form__column">
+                      <div class="form__item">
+                        <label for="email" class="form__item__label"
+                          >Почта</label
+                        >
+                        <input
+                          id="email"
+                          type="email"
+                          class="form__item__input"
+                          name="email"
+                          placeholder="company@mail.com"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form__button button-form">
+                    <input
+                      class="button-form"
+                      type="button"
+                      value="Отправить"
+                    />
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="page__geography-of-work geography">
+          <div class="geagraphy__container _container">
+            <div class="geagraphy__body">
+              <div class="geagraphy__description-column">
+                <div class="geagraphy__title">География работ</div>
+                <div class="geagraphy__sub-title">ООО «Путьремстрой» реализует проекты на всей территории Российской Федерации.</div>
+                <div class="geagraphy__sub-description">Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации, постоянно расширяя географию присутствия на всю территорию страны. Работа компании ведется как в крупных городах областного значения, так и в небольших населенных пунктах. Заказчиками могут быть региональные или федеральные компании, крупные компании из разных сфер деятельности,заинтересованные в осуществлении транспортных проектов.</div>
+              </div>
+              <div class="geagraphy__image">
+                <img src="./img/map/map.jpg" alt="map" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__portfolio portfolio">
+          <div class="portfolio__container _container">
+            <div class="portfolio__body">
+              <h3 class="portfolio__title">Наше портфолио</h3>
+              <div class="portfolio__slider slider">
+                <div class="slider__arrow arrow">
+                  <div href="" class="arrow__left"><span class="arrow_item"><span class="arrow_item-second"></span></span></div>
+    
+                  <div href="" class="arrow__right"><span class="arrow_item _r1"><span class="arrow_item-second _r2"></span></span></div>
+                </div>
+                <div class="slider__image">
+                  <img
+                      src="./img/portfolio/portfolio.jpg"
+
+                      srcset="./img/portfolio/portfolio960.jpg 2x,
+                              ./img/portfolio/portfolio480.jpg 3x"
+
+                      sizes="(max-width: 960px) 620px,
+                              (max-width: 480px) 298px"
+
+                      alt="iron road"
+                      class="slider__img"
+                      >
+                  <div class="slider__description-body body-description">
+                    <div class="body-description__title">Ремонт эстакад</div>
+                    <div class="body-description__subtitle">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</div>
+                    <div class="body-description__ready-work work-ready">
+                      <div class="work-ready__title">Проделанные работы:</div>
+                      <ul class="work-ready__items">
+                        <li class="work-ready__item">Выкопали ямы (незнай зачем)</li>
+                        <li class="work-ready__item">Положили рельсы</li>
+                        <li class="work-ready__item">Рельсы рельсы, шпалы шпалы</li>
+                        <li class="work-ready__item">Ехал поезд запоздалый</li>
+                      </ul>
+                      <div class="work-ready__button button-form _btn-portfolio">
+                        <input
+                        class="button-form _ready-btn"
+                        type="button"
+                        value="Оставить заявку"
+                      />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </section>
+      </main>
+      <footer class="footer">Я Подвал</footer>
+    </div>
+    <script src="./javaScript/index.js"></script>
+    <script src="./javaScript/script.js"></script>
+  </body>
+</html>
