@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./style/style.css" />
+    <script src="./javaScript/picturefill.js"></script>
     <title>Iron way</title>
   </head>
   <body>
@@ -79,10 +80,16 @@
             <img src="./img/main_block/mainThemePic.jpg" alt="main picture" />
           </div>
           <div class="page__form__second-pic _ibg" id="second-img">
-            <img src="./img/main_block/mainThemePic960.jpg" alt="main picture" />
+            <img
+              src="./img/main_block/mainThemePic960.jpg"
+              alt="main picture"
+            />
           </div>
           <div class="page__form__third-pic _ibg" id="third-img">
-            <img src="./img/main_block/mainThemePic480.jpg" alt="main picture" />
+            <img
+              src="./img/main_block/mainThemePic480.jpg"
+              alt="main picture"
+            />
           </div>
         </div>
         <section class="page__form form">
@@ -93,7 +100,8 @@
               </div>
               <form action="" class="form__content">
                 <div class="form__title">
-                  <span class="form__title_block">Оставьте заявку</span> на <span class="form__title_bold">бесплатную</span> консультацию
+                  <span class="form__title_block">Оставьте заявку</span> на
+                  <span class="form__title_bold">бесплатную</span> консультацию
                 </div>
                 <div class="form__data">
                   <div class="form__columns">
@@ -157,8 +165,20 @@
             <div class="geagraphy__body">
               <div class="geagraphy__description-column">
                 <div class="geagraphy__title">География работ</div>
-                <div class="geagraphy__sub-title">ООО «Путьремстрой» реализует проекты на всей территории Российской Федерации.</div>
-                <div class="geagraphy__sub-description">Компания проводит строительные и ремонтные работы на территории более чем 20 субъектов Российской Федерации, постоянно расширяя географию присутствия на всю территорию страны. Работа компании ведется как в крупных городах областного значения, так и в небольших населенных пунктах. Заказчиками могут быть региональные или федеральные компании, крупные компании из разных сфер деятельности,заинтересованные в осуществлении транспортных проектов.</div>
+                <div class="geagraphy__sub-title">
+                  ООО «Путьремстрой» реализует проекты на всей территории
+                  Российской Федерации.
+                </div>
+                <div class="geagraphy__sub-description">
+                  Компания проводит строительные и ремонтные работы на
+                  территории более чем 20 субъектов Российской Федерации,
+                  постоянно расширяя географию присутствия на всю территорию
+                  страны. Работа компании ведется как в крупных городах
+                  областного значения, так и в небольших населенных пунктах.
+                  Заказчиками могут быть региональные или федеральные компании,
+                  крупные компании из разных сфер деятельности,заинтересованные
+                  в осуществлении транспортных проектов.
+                </div>
               </div>
               <div class="geagraphy__image">
                 <img src="./img/map/map.jpg" alt="map" />
@@ -172,40 +192,56 @@
               <h3 class="portfolio__title">Наше портфолио</h3>
               <div class="portfolio__slider slider">
                 <div class="slider__arrow arrow">
-                  <div href="" class="arrow__left"><span class="arrow_item"><span class="arrow_item-second"></span></span></div>
-    
-                  <div href="" class="arrow__right"><span class="arrow_item _r1"><span class="arrow_item-second _r2"></span></span></div>
+                  <div href="" class="arrow__left">
+                    <span class="arrow_item"
+                      ><span class="arrow_item-second"></span
+                    ></span>
+                  </div>
+
+                  <div href="" class="arrow__right">
+                    <span class="arrow_item _r1"
+                      ><span class="arrow_item-second _r2"></span
+                    ></span>
+                  </div>
                 </div>
                 <div class="slider__image">
-                  <img
-                      src="./img/portfolio/portfolio.jpg"
+                  <picture class="slider__imgs">
+                    <source
+                      srcset="./img/portfolio/three.jpg"
+                      media="(max-width: 480px)"
+                    />
+                    <source
+                      srcset="./img/portfolio/two.jpg"
+                      media="(max-width: 960px)"
+                    />
+                    <source srcset="./img/portfolio/one.jpg" />
+                    <img srcset="./img/portfolio/one.jpg" alt="Default rails" />
+                  </picture>
 
-                      srcset="./img/portfolio/portfolio960.jpg 2x,
-                              ./img/portfolio/portfolio480.jpg 3x"
-
-                      sizes="(max-width: 960px) 620px,
-                              (max-width: 480px) 298px"
-
-                      alt="iron road"
-                      class="slider__img"
-                      >
                   <div class="slider__description-body body-description">
                     <div class="body-description__title">Ремонт эстакад</div>
-                    <div class="body-description__subtitle">Капитальный ремонт и еще че нибудь напишите а то слишком мало выходит</div>
+                    <div class="body-description__subtitle">
+                      Капитальный ремонт и еще че нибудь напишите а то слишком
+                      мало выходит
+                    </div>
                     <div class="body-description__ready-work work-ready">
                       <div class="work-ready__title">Проделанные работы:</div>
                       <ul class="work-ready__items">
-                        <li class="work-ready__item">Выкопали ямы (незнай зачем)</li>
+                        <li class="work-ready__item">
+                          Выкопали ямы (незнай зачем)
+                        </li>
                         <li class="work-ready__item">Положили рельсы</li>
-                        <li class="work-ready__item">Рельсы рельсы, шпалы шпалы</li>
+                        <li class="work-ready__item">
+                          Рельсы рельсы, шпалы шпалы
+                        </li>
                         <li class="work-ready__item">Ехал поезд запоздалый</li>
                       </ul>
-                      <div class="work-ready__button button-form _btn-portfolio">
+                      <div class="work-ready__button _btn-portfolio">
                         <input
-                        class="button-form _ready-btn"
-                        type="button"
-                        value="Оставить заявку"
-                      />
+                          class="button-form _ready-btn"
+                          type="button"
+                          value="Оставить заявку"
+                        />
                       </div>
                     </div>
                   </div>
@@ -213,10 +249,273 @@
               </div>
             </div>
           </div>
-          
+        </section>
+        <section class="page__benefits benefits">
+          <div class="benefits__container _container">
+            <div class="benefits__title">Преимущества работы с нами</div>
+            <div class="benefits__body">
+              <div class="benefits__items">
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/01.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/02.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/03.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/04.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/05.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+                <div class="benefits__item">
+                  <div class="benefits__image">
+                    <img src="./img/benefits/06.png" alt="" />
+                  </div>
+                  <div class="benefits__content">
+                    <div class="benefits__sub-title">Экономия стредств</div>
+                    <div class="benefits__text">
+                      Специалисты нашей компании грамотно рассчитываю объем
+                      работ и количество затрачиваемых материалов, что позволяет
+                      исключить дополнительные расходы на заключительных этапах.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page__about about">
+          <div class="about__container _container">
+            <div class="about__title">О нашей компании</div>
+            <div class="about__main-block">
+              <div class="about__body">
+                <div class="about__content">
+                  <div class="about__description">
+                    <div class="about__name">Компания ООО”Название”</div>
+                    <div class="about__subtitle">
+                      Оказывает широкий спектр услуг по строительству и ремонту
+                      железнодорожных путей, Ремонт железнодорожных тупиков,
+                      стрелочных переводов, переездов. Опытные сотрудники,
+                      наличие необходимого оборудования позволяет в кратчайшие
+                      сроки выполнить работы любой сложности качественно и в
+                      кратчайшие сроки. Гибкая ценовая политика, наличие СРО.
+                      Подбор материалов от новых до Б/У от партнёров.
+                    </div>
+                    <div class="about__docs">
+                      <img src="./img/about/01.jpg" alt="" />
+                      <img src="./img/about/02.jpg" alt="" />
+                    </div>
+                  </div>
+                </div>
+                <div class="about__background _ibg">
+                  <img src="./img/about/background-about.jpg" alt="" />
+                </div>
+              </div>
+              <div class="about__image">
+                <img src="./img/about/about.jpg" alt="" />
+              </div>
+            </div>
+          </div>
         </section>
       </main>
-      <footer class="footer">Я Подвал</footer>
+      <footer class="footer">
+        <div class="footer__contacts contacts">
+          <div class="contacts__container _container">
+            <div class="contacts__body">
+              <div class="contacts__title-contact">Контакты</div>
+              <table class="contacts__table table">
+                <tr class="table-row">
+                  <td class="table-col">Телефон:</td>
+                  <td class="table-col">8(902)272-93-14</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-col"></td>
+                  <td class="table-col">8(982)178-03-07</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-col">E-mail:</td>
+                  <td class="table-col">nasvaniye@mail.ru</td>
+                </tr>
+                <tr class="table-row">
+                  <td class="table-col">Адрес:</td>
+                  <td class="table-col">
+                    г. Екатеринбург, ул. Колмогорова, дом 67
+                  </td>
+                </tr>
+              </table>
+              <div class="contacts__title-name">ООО “Название”</div>
+              <div class="contacts__icon icon">
+                <a href="#" class="icon__link"
+                  ><img
+                    src="/img/footer/whatsup-icon.png"
+                    class="icon"
+                    alt="whatsup-icon"
+                /></a>
+                <a href="#" class="icon__link"
+                  ><img
+                    src="./img/footer/Phone.png"
+                    class="icon"
+                    alt="phone-icon"
+                /></a>
+                <a href="#" class="icon__link"
+                  ><img
+                    src="./img/footer/Envelope.png"
+                    class="icon"
+                    alt="envelope-icon"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer__form form-footer">
+          <div class="form-footer__body">
+            <form action="" class="form-footer__content">
+              <div class="form-footer__title">Остались вопросы?</div>
+              <div class="form-footer__inputs">
+                <div class="inputs__box">
+                  <div class="form__item _b">
+                    <label for="name-input" class="form__item__label"
+                      >Имя</label
+                    >
+                    <input
+                      id="name-input"
+                      type="text"
+                      class="form__item__input _bi"
+                      name="name"
+                      placeholder="Михаил"
+                    />
+                  </div>
+                  <div class="form__item _b">
+                    <label for="phone-input" class="form__item__label"
+                      >Телефон</label
+                    >
+                    <input
+                      id="phone-input"
+                      type="number"
+                      minlength="0"
+                      maxlength="12"
+                      class="form__item__input _bi"
+                      name="phone"
+                      placeholder="8 (800) 535 35 35"
+                    />
+                  </div>
+                  <div class="form__item _b">
+                    <label for="email-input" class="form__item__label"
+                      >Почта</label
+                    >
+                    <input
+                      id="email-input"
+                      type="email"
+                      class="form__item__input _bi"
+                      name="email"
+                      placeholder="company@mail.com"
+                    />
+                  </div>
+                </div>
+                <div class="form-footer__textarea textarea">
+                  <label for="area" class="textarea__text">Комментарий</label>
+                  <textarea
+                    id="area"
+                    class="textarea__area"
+                    name="area"
+                    rows="5"
+                    cols="33"
+                  >
+Напишите ваш вопрос...
+                </textarea
+                  >
+                </div>
+              </div>
+              <div class="form-footer__agreement agreement">
+                <div class="agreement__checkbox checkbox">
+                  <input type="checkbox" value="1" class="checkbox__input" />
+                  <span class="checkbox__custom"></span>
+                  <span class="checkbox__text"
+                    ><p>Даю свое согласие</p>
+                    с
+                    <a href="#"> политикой конфиденциальности</a></span
+                  >
+                </div>
+                <div class="agreement__body-button">
+                  <button class="agreement__button">Отправить</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="footer__copy-right copy">
+          <div class="copy__container _container">
+            <div class="copy__body">
+              <div class="copy__right">Все права защищены.</div>
+              <div class="copy__developer">
+                <img
+                  class="copy__img"
+                  src="./img/footer/icon-footer.png"
+                  alt="business label"
+                />
+                <div class="copy__text">
+                  <a href="">
+                  Разработка сайта<span class="block-span"> - студия “ТвойСтартап”</span>
+                </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="./javaScript/index.js"></script>
     <script src="./javaScript/script.js"></script>

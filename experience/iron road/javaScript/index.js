@@ -1,5 +1,7 @@
-let btn = document.querySelector('.button-form')
+let links = document.querySelectorAll('a')
 
-btn.addEventListener('click', () => {
-    console.log('click');
+links.forEach((link) => {
+    link.addEventListener('click', (event) => {
+        event.preventDefault()
+    })
 })
