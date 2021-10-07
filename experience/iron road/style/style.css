@@ -369,7 +369,6 @@ body._touch .menu__list > li._active {
   .menu__link {
     width: 90px;
   }
-
 }
 
 @media (max-width: 640px) {
@@ -445,12 +444,12 @@ body._touch .menu__list > li._active {
   object-position: top;
 }
 
-#second-img {
+/* #second-img {
   display: none;
 }
 #third-img {
   display: none;
-}
+} */
 
 @media (max-width: 960px) {
   .main-block__body {
@@ -464,7 +463,7 @@ body._touch .menu__list > li._active {
   .main-block__text {
     width: 480px;
   }
-  #first-img {
+  /* #first-img {
     display: none;
   }
   #second-img {
@@ -474,7 +473,7 @@ body._touch .menu__list > li._active {
   }
   ._ibg {
     position: static;
-  }
+  } */
 }
 @media (max-width: 640px) {
   .main-block__body {
@@ -487,12 +486,12 @@ body._touch .menu__list > li._active {
   .main-block__title span {
     display: inline;
   }
-  .main-block__image {
+  /* .main-block__image {
     display: none;
   }
   ._ibg {
     position: static;
-  }
+  } */
 }
 
 @media (max-width: 480px) {
@@ -512,7 +511,7 @@ body._touch .menu__list > li._active {
     font-weight: 400;
     margin-bottom: 35px;
   }
-  .main-block__image {
+  /* .main-block__image {
     display: none;
   }
   #second-img {
@@ -525,7 +524,7 @@ body._touch .menu__list > li._active {
   }
   ._ibg {
     position: static;
-  }
+  } */
 }
 
 /*--------------FIRST FORM---------------*/
@@ -555,7 +554,6 @@ body._touch .menu__list > li._active {
 }
 .form__data {
   display: flex;
-  justify-content: space-between;
 }
 .form__columns {
   display: flex;
@@ -584,16 +582,16 @@ body._touch .menu__list > li._active {
 }
 
 .form__item__input::placeholder {
-  padding-left: 15px;
+
   font-size: 14px;
   line-height: 18px;
   color: rgba(16, 16, 16, 0.4);
 }
 input.form__item__input {
-  padding: 15px;
   font-size: 14px;
   line-height: 18px;
   color: rgba(16, 16, 16, 0.4);
+  padding-left: 15px;
 }
 
 .page__form__image {
@@ -608,19 +606,21 @@ input.form__item__input {
   object-position: top;
 }
 .form__button {
-  margin-top: 15px;
-  margin-right: 88px;
-  margin-left: 10px;
+  height: 50px;
+  width: 235px;
+  margin-top: 17px;
+  margin-left: 11px;
 }
 .button-form {
-  width: 235px;
-  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fd6612;
   border-radius: 23.5px;
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  text-align: center;
+
   letter-spacing: 0.04em;
   color: #ffffff;
 }
@@ -632,6 +632,9 @@ input.form__item__input {
     width: 200px;
     margin-right: 10px;
   }
+  .form__button {
+    margin-left: 0;
+  }
 }
 @media (max-width: 960px) {
   .main-block__body {
@@ -641,16 +644,13 @@ input.form__item__input {
     padding: 0 25px;
   }
 
-  .form__data{
+  .form__data {
     align-items: center;
   }
   .page__form {
     margin-top: -420px;
   }
-  .form__title {
-    width: 501px;
-    margin: 0 auto;
-  }
+
   .form__title_block {
     display: block;
   }
@@ -669,17 +669,18 @@ input.form__item__input {
     width: 501px;
     height: 45px;
     margin-bottom: 16px;
+    margin-right: 0;
   }
   .form__button {
-    margin-bottom: 53px;
-    margin-left: 0;
+    margin: 0 auto;
+    margin-top: 16px;
+    margin-bottom: 35px;
   }
   .button-form {
-    width: 500px;
-    height: 50px;
+    width: 100%;
   }
   .page__form__image img {
-    object-position: 80% 30%;
+    object-position: 70% 30%;
   }
 }
 
@@ -716,7 +717,7 @@ input.form__item__input {
 }
 
 /*--------------FIRST FORM - media---------------*/
-/*GEODRAPHY OF WORK*/
+/*GEOGRAPHY OF WORK*/
 .page__geography-of-work {
   padding-top: 69px;
   padding-bottom: 75px;
@@ -753,9 +754,9 @@ input.form__item__input {
   height: 455px;
   filter: drop-shadow(0px 4px 32px rgba(65, 105, 193, 0.1));
 }
-/*GEODRAPHY OF WORK*/
+/*GEOGRAPHY OF WORK*/
 
-/*GEODRAPHY OF WORK - media-requests*/
+/*GEOGRAPHY OF WORK - media-requests*/
 
 @media (max-width: 1124px) {
   .geagraphy__image {
@@ -839,7 +840,20 @@ input.form__item__input {
   position: relative;
 }
 
-/*Стрелки*/
+/*Стрелки
+.arrow_item-second {
+    position: absolute;
+    display: block;
+    border-top: 3px solid rgba(65, 105, 193, 0.38);
+    width: 40px;
+    height: 26px;
+    transform: rotate(
+93deg);
+    top: 5px;
+    left: -32px;
+}
+
+*/
 
 .slider__arrow {
   position: absolute;
@@ -864,9 +878,10 @@ input.form__item__input {
   border-top: 3px solid rgba(65, 105, 193, 0.38);
   width: 40px;
   height: 26px;
-  transform: rotate(75deg);
-  top: 9px;
-  left: -24px;
+  transform: rotate(
+93deg);
+  top: 5px;
+  left: -32px;
 }
 .arrow__right {
   transform: scale(-1, 1);
@@ -905,7 +920,7 @@ input.form__item__input {
   padding-right: 30px;
 }
 .body-description__title {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 22px;
   line-height: 28px;
   margin-bottom: 10px;
@@ -991,7 +1006,7 @@ input.form__item__input {
   }
   .body-description {
     width: 547px;
-    height: 325px;
+    height: 340px;
     padding-top: 20px;
   }
 
@@ -1103,6 +1118,7 @@ input.form__item__input {
   }
   .work-ready__button {
     margin: 0 auto;
+    margin-left: -5px;
     padding-top: 50px;
   }
 }
@@ -1319,7 +1335,6 @@ input.form__item__input {
   .about__description {
     padding: 2em;
   }
-
 }
 @media (max-width: 960px) {
   .about__container {
@@ -1702,7 +1717,7 @@ input.form__item__input {
     flex-direction: column-reverse;
   }
   input.form__item__input {
-    padding: 0;
+    padding: 15px;
   }
   .agreement__button {
     padding: 14px 93px;
@@ -1728,6 +1743,7 @@ input.form__item__input {
     padding-top: 30px;
     padding-left: 10px;
     padding-bottom: 23px;
+    padding-right: 10px;
     margin-right: -30px;
   }
   .contacts__body {
@@ -1760,9 +1776,6 @@ input.form__item__input {
   }
   .table-col:last-child {
     font-size: 12px;
-  }
-  .form-footer__body {
-    padding-top: 15px;
   }
 }
 
